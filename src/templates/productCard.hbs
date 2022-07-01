@@ -1,0 +1,11 @@
+
+{{#each this}}
+<li class='product' data-id='{{this.id}}'>
+  <span class='product-name'>{{this.product}}</span>
+  <p class='descr'>
+    <span class='price'>{{this.price}}</span>
+    <span class='currency'>{{this.currency}}</span>
+  </p>
+  <button class='btn'>Add to cart</button>
+</li>
+{{/each}}

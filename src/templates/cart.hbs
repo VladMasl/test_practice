@@ -1,0 +1,16 @@
+<div
+  class='js-cart'
+  style='position:absolute; right:0; margin:0; padding: 10px; background-color: aliceblue; '
+>
+<button type="button">Close</button>
+  <ul>
+    {{#each this}}
+      <li data-id='{{this.id}}'>
+        <p> Title: {{this.product}}</p>
+        <p> Price: {{this.price}}</p>
+        <p> Quantity: {{this.quantity}}</p>
+      </li>
+
+    {{/each}}
+  </ul>
+</div>
